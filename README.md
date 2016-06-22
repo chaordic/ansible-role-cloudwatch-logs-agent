@@ -16,3 +16,13 @@ logs:
     format: "%b %d %H:%M:%S"
     group_name: syslog
 ```
+
+## Author
+
+Mijndert Stuij <mijndert@mijndertstuij.nl>
+
+Inspired by [https://github.com/christianewillman/ansible-aws-cloudwatch-logs](https://github.com/christianewillman/ansible-aws-cloudwatch-logs)
+
+## License
+
+MIT

@@ -1,0 +1,6 @@
+{
+  "name": "Cloudwatch Logs Agent Ansible Role",
+  "tagline": "An Ansible role to install AWS Cloudwatch Logs agent on Ubuntu 16.04",
+  "body": "# ansible-cloudwatch-logs-agent\r\n\r\nAn Ansible role to install AWS Cloudwatch Logs agent on Ubuntu 16.04\r\n\r\n## Prerequisites\r\n\r\nThis role assumes you run Ubuntu 16.04 on EC2.\r\n\r\n## Usage\r\n\r\nInclude the folder in your roles directory. You can add log files to the configuration in, for example, your group_vars, like this:\r\n\r\n```\r\nlogs:\r\n  - file: /var/log/syslog\r\n    format: \"%b %d %H:%M:%S\"\r\n    group_name: syslog\r\n```\r\n\r\n## Author\r\n\r\nMijndert Stuij <mijndert@mijndertstuij.nl>\r\n\r\nInspired by [https://github.com/christianewillman/ansible-aws-cloudwatch-logs](https://github.com/christianewillman/ansible-aws-cloudwatch-logs)\r\n\r\n## License\r\n\r\nMIT\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}

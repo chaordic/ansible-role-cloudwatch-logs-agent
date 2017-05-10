@@ -35,5 +35,14 @@
   service: name=awslogs enabled=yes
   when: ansible_distribution == 'Ubuntu' and ansible_distribution_version == '14.04'
 
+- name: Replace awslogs launcher with fixed to avoid /var/awslogs/state/state-agent sqlite3 lock problem
+  copy:
+    src: awslogs-agent-launcher.sh
+    dest: /var/awslogs/bin/awslogs-agent-launcher.sh
+    owner: root
+    group: root
+    mode: 755
+    backup: yes
+
 - name: Start the service
   service: name=awslogs state=started

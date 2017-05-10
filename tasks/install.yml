@@ -45,4 +45,4 @@
     backup: yes
 
 - name: Start the service
-  service: name=awslogs state=restart
+  service: name=awslogs state=restarted
